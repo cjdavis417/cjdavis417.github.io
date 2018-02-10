@@ -1,0 +1,20 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+body {
+    background: #ffd1aa;
+}
+
+nav {
+    background-color: #ff7600;
+}
+
+.brand-logo {
+    left: 15px;
+}
+
+
+
