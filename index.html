@@ -5,6 +5,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
         <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/breakpoints.css">
         <meta name="viewport" content="width=device.width, initial-scale=1.0"/>
     </head>
 
@@ -12,23 +13,37 @@
         <header>
             <nav>
                 <div class="nav-wrapper">
-                <a class="brand-logo"><i class="material-icons">cloud</i>Christopher Davis</a>
+                <a class="brand-logo"><i class="material-icons">trending_up</i>Christopher Davis</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
-                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+
+                <!-- start collapsable header -->
+                <div id="sideNav"><!-- this id is used for @media queries -->
+                    <ul id="slide-out" class="side-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+                </div>
+                <!-- end collapsable header -->
             </div>
             </nav>
         </header>
         <main>
-
+            <h3>Christopher Davis</h3>
+            <img id="mypic" src="https://avatars1.githubusercontent.com/u/7516113?s=400&u=f6a15ab2a76f16b6110ddc1a6229b73205d241c6&v=4">
         </main>
         <footer>
 
         </footer>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="materialize/js/materialize.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
     </body>
 </html>
