@@ -30,10 +30,15 @@ body {
     --webkit-background-size: 100%;
     --moz-background-size: 100%;
     --o-background-size: 100%;
-    background-size: cover;
+    background-size: 100%;
+
     --webkit-background-size: cover;
     --moz-background-size: cover;
     --o-background-size: cover;
+    background-size: cover;
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
+
     margin-bottom: 0px;
     padding: 0px;
 
@@ -150,6 +155,10 @@ nav {
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar { 
     background: #222222; 
+}
+
+.stickyNavActive {
+    background: #fff;
 }
 
 .brand-logo {
@@ -293,5 +302,19 @@ p.lead {
 
 .clearfix {
     clear: both;
+}
+
+@keyframes wiggle {
+	0% {
+		padding-top: 20px;
+	}
+
+	50% {
+		padding-top: 28px;
+	}
+
+	100% {
+		padding-top: 20px;
+	}
 }
 
