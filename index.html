@@ -2,48 +2,612 @@
 <html>
     <head>
         <title>Christopher Davis</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Christopher Davis">
+        <meta name="description" content="I'm Christopher Davis, a web developer, systems administrator, and a coder with good knowledge of front-end techniques and swift for iOS.">
+        <meta name="keywords" content="Christopher Davis, Web Developer, HTML5, CSS3, Javascript, Angular 5, iOS developer, Swift, OOP">
+        <meta name="robots" content="index, follow">
+        <meta name="revisit-after" content="14 days">
+        <link type="text/css" rel="stylesheet" href="bootstrap-4-2/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <link rel="stylesheet" type="text/css" href="styles/breakpoints.css">
-        <meta name="viewport" content="width=device.width, initial-scale=1.0"/>
+        <!-- <link rel="stylesheet" type="text/css" href="styles/breakpoints.css"> -->
     </head>
 
-    <body>
-        <header>
-            <nav>
-                <div class="nav-wrapper">
-                <a class="brand-logo"><i class="material-icons">trending_up</i>Christopher Davis</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-
-                <!-- start collapsable header -->
-                <div id="sideNav"><!-- this id is used for @media queries -->
-                    <ul id="slide-out" class="side-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-                </div>
-                <!-- end collapsable header -->
+    <body data-spy="scroll" data-target="#navbar-example" style class>
+        <div id="top" class="jumbotron" data-src="">
+            <div class="container">
+                <h1>Christopher Davis</h1>
+                <p class="lead">Resume</p>
             </div>
-            </nav>
-        </header>
-        <main>
-            <h3>Christopher Davis</h3>
-            <img id="mypic" src="https://avatars1.githubusercontent.com/u/7516113?s=400&u=f6a15ab2a76f16b6110ddc1a6229b73205d241c6&v=4">
-        </main>
-        <footer>
+            <div class="overlay"></div>
+            <a href="#profile" class="scroll-down">
+                <span class="glyphicon">&#9660;</span>
+            </a>
+        </div>
+        
+        <nav class="navbar navbar-default" id="navbar-example" role="navigation">
+            <!-- <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div> -->
+            <div class="">
+                <ul class="nav navbar-nav">
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#experiences">Experience</a></li>
+                    <li><a href="#abilities">Abilities</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-        </footer>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="materialize/js/materialize.js"></script>
+        <div class="background-white">
+            <div id="profile" class="container">
+                <h2>Profile</h2>
+                <p class="lead">I'm a creative developer</p>
+                <hr>
+                <div class="row">
+                    <div id="about-me" class="col-md-4">
+                        <h3>About Me</h3>
+                        <p>I have many hats.  I am learning front end web development.  I am also an iOS developer. I love structure and order and I also stand for quality. I am also a Systems Administrator.  Also, I have experience developing 3D mechanical hardware.  I love spending time fixing little details. Also, I like working in a team.  You'll learn faster and more. As the saying goes, two heads are better than one.</p>
+                    </div>
+                    <div id="my-pic" class="col-md-4 text-center">
+                        <img id="mypic" src="https://avatars1.githubusercontent.com/u/7516113?s=400&u=f6a15ab2a76f16b6110ddc1a6229b73205d241c6&v=4">
+                    </div>
+                    <div id="my-details" class="col-md-4">
+                        <h3>Details</h3>
+                        <p>
+                            <strong>Name:</strong><br>
+                            Christopher Davis<br>
+                            <strong>Age:</strong><br>
+                            <span id="age"></span> years<br>
+                            <strong>Location:</strong><br>
+                            Louisville, Kentucky, USA, Earth
+                        </p>
+                        <a href="https://twitter.com/realcjdavis?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @realcjdavis</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <div id="experiences" class="container">
+        <h2>Experience</h2>
+        <p class="lead">some awesome quote</p>
+        <hr>
+        <h3>Careers</h3>
+        <div class="experiences">
+            <div class="experiences row">
+                <div class="col-md-4">
+                    <h4>MonkeyFace, LLC</h4>
+                    <p class="experience-period">12/2004 - Current</p>
+                </div>
+                <div class="col-md-8">
+                    <p><strong>Owner - Developer</strong>
+                        <span class="hidden-phone">
+                            <ul>			      		
+                                <li>Self Taught iOS App coding from various iOS Development courses</li>
+                                <li>Bear Fit, Fitness Journaling App, currently available on the Apple iTunes Store</li>
+                                <li>All aspects of Developing this app, design and update maintenance </li>
+                                <li><strong>Technologies Used:</strong> Xcode, Swift, HTML, CSS, JavaScript, Adobe Creative Suite, Visual Studio Code, Slack, GitHub</li>
+                            </ul>
+                        </span>
+                        <span class="experience-details">
+                            <span class="location"></span>
+                            <img class="svg-experience" src="img/map-loc.svg"><span>Louisville</span>
+                            <span class="seperator">|</span>
+                            <span class="link">
+                                <img class="svg-experience" src="img/link.svg">
+                                <a href="https://monkeyface0417.wixsite.com/bearfit" target="_blank">BearFit</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="experiences row">
+                <div class="col-md-4">
+                    <h4>Belcan</h4>
+                    <p class="experience-period">04/2014 - 07/2017</p>
+                </div>
+                <div class="col-md-8">
+                    <p><strong>Designer</strong>
+                        <span class="hidden-phone">
+                            <ul>
+                                <li>Generated Process Documents</li>
+                                <li>Maintained Digital Aircraft Hardware and Model Library</li>
+                                <li>Document and Update Library to SAE/ MIL-STD</li>
+                                <li>Interfaced with Hardware Vendors</li>
+                                <li><strong>Technologies Used:</strong> Sharepoint, JIRA, DOORS, Teamcenter 7 and 9, &amp; NX 7.5</li>
+                            </ul>
+                        </span>
+                        <span class="experience-details">
+                            <span class="location"></span>
+                            <img class="svg-experience" src="img/map-loc.svg"><span>Remote</span>
+                            <span class="seperator">|</span>
+                            <span class="link">
+                                <img class="svg-experience" src="img/link.svg">
+                                <a href="https://belcan.com/" target="_blank">Belcan</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="experiences row">
+                <div class="col-md-4">
+                    <h4>CDI Corp</h4>
+                    <p class="experience-period">03/2010 - 04/2014</p>
+                </div>
+                <div class="col-md-8">
+                    <p><strong>Systems Administrator</strong>
+                        <span class="hidden-phone">
+                            <ul>
+                                <li>L3 Software trouble shooting.</li>
+                                <li>Maintained program management software and user base.</li>
+                                <li>Server-side Software Installations, hot fixes, and upgrades.</li>
+                                <li>SQL script writing, Import/ export script writing, VBA, VB6.</li>
+                                <li><strong>Technologies Used:</strong> Oracle SQL Developer, Deltek Open Plan, Windows Server 2003 and 2008, MS Office Suite, MS Project, Visual Basic 6 and MS Visual Studio 6</li>
+                            </ul>
+                        </span>
+                        <span class="experience-details">
+                            <span class="location"></span>
+                            <img class="svg-experience" src="img/map-loc.svg"><span>Cincinnati, Ohio</span>
+                            <span class="seperator">|</span>
+                            <span class="link">
+                                <img class="svg-experience" src="img/link.svg">
+                                <a href="http://www.cdicorp.com/" target="_blank">CDI Corp</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="experiences row">
+                <div class="col-md-4">
+                    <h4>CDI Corp</h4>
+                    <p class="experience-period">05/2003 - 10/2009</p>
+                </div>
+                <div class="col-md-8">
+                    <p><strong>Designer / Drafter</strong>
+                        <span class="hidden-phone">
+                            <ul>
+                                <li>Developed “Guide to Drafting” for new hires.</li>
+                                <li>Supported Engine Structures, trained others on the process.</li>
+                                <li>Supported Engineers with multiple jobs simultaneously.</li>
+                                <li>Managed work to various CDI sites.</li>
+                                <li><strong>Technologies Used:</strong> Siemens NX 2, NX 4, and NX 6, &amp; Teamcenter. MS Office Suite</li>
+                            </ul>
+                        </span>
+                        <span class="experience-details">
+                            <span class="location"></span>
+                            <img class="svg-experience" src="img/map-loc.svg"><span>Cincinnati, Ohio</span>
+                            <span class="seperator">|</span>
+                            <span class="link">
+                                <img class="svg-experience" src="img/link.svg">
+                                <a href="http://www.cdicorp.com/" target="_blank">CDI Corp</a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-white">
+        <div id="abilities" class="container">
+            <h2>Abilities</h2>
+            <p class="lead">some witty abilities quote</p>
+            <hr>
+            <h3>Skills</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+                        <li>
+                            <span class="ability-title">Testing</span>
+                            <span class="ability-score">
+                                <img class="svg-experience glyphicon" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Project Management</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">CAD</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Seimens NX</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">MS Office</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Seimens Teamcenter</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Systems Administration</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Deltek Open Plan</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">HTML</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+
+                    </ul>
+                
+                </div>
+
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+                        <li>
+                            <span class="ability-title">Testing</span>
+                            <span class="ability-score">
+                                <img class="svg-experience glyphicon" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Project Management</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">CAD</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Seimens NX</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">MS Office</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Seimens Teamcenter</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Systems Administration</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Deltek Open Plan</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">HTML</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+
+                    </ul>
+                
+                </div>
+
+            </div>
+
+            <hr>
+            <h3>Tools</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+                        <li>
+                            <span class="ability-title">Testing</span>
+                            <span class="ability-score">
+                                <img class="svg-experience glyphicon" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Project Management</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">CAD</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Seimens NX</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">MS Office</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Seimens Teamcenter</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Systems Administration</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Deltek Open Plan</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">HTML</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+
+                    </ul>
+                
+                </div>
+
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+                        <li>
+                            <span class="ability-title">Testing</span>
+                            <span class="ability-score">
+                                <img class="svg-experience glyphicon" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Project Management</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">CAD</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Seimens NX</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">MS Office</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Seimens Teamcenter</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Systems Administration</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Deltek Open Plan</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">HTML</span>
+                            <span class="ability-score">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                                <img class="svg-experience" src="img/star-filled.png">
+                            </span>
+                        </li>
+
+                    </ul>
+                
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="projects" class="container"></div>
+    <div class="background-gray">
+        <div id="contact" class="container"></div>
+    </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4-2/js/bootstrap.js"></script>
         <script type="text/javascript" src="scripts/main.js"></script>
+        <script type="text/javascript" src="scripts/helper.js"></script>
     </body>
 </html>

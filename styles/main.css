@@ -4,12 +4,152 @@
     box-sizing: border-box;
   }
 
+/* containers */
+.container {
+    max-width: 1280px;
+    padding: 40px 180px;
+}
+
+/* body elements */
+
+
+html, body {
+    color: #552700;
+    font-family: 'Open Sans', sans-serif, !important;
+    height: 100%;
+}
+
 body {
     background: #ffd1aa;
+    font-size: 15px;
+    line-height: 1.64;
+}
+
+.jumbotron {
+    background: no-repeat center right fixed url(../img/ross2.png);
+    --webkit-background-size: 100%;
+    --moz-background-size: 100%;
+    --o-background-size: 100%;
+    background-size: cover;
+    --webkit-background-size: cover;
+    --moz-background-size: cover;
+    --o-background-size: cover;
+    margin-bottom: 0px;
+    padding: 0px;
+
+}
+
+.jumbotron .container {
+    position: relative;
+    top: 28%;
+    z-index: 4;
+    text-align: center;
+}
+
+.jumbotron .container .lead {
+    font-size: 28px;
+}
+
+.jumbotron .container h1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+    border-bottom-color: rgba(255,255,255,0.35);
+    display: inline-block;
+    font-size: 63px;
+}
+
+.jumbotron .container > * {
+    text-align: center;
+    color: #ffffff;
+}
+
+.jumbotron .scroll-down {
+    height: 80px;
+    width: 110px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    background-color: #552700;
+    text-align: center;
+    z-index: 6;
+}
+
+.jumbotron .scroll-down .glyphicon {
+    color: #fff;
+    font-size: 30px;
+    padding-right: 2px;
+    padding-top: 20px;
+    animation-name: wiggle;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 }
 
 nav {
     background: linear-gradient(#ff7600, #ee5400);
+}
+
+.fixed .navbar {
+    position: fixed;
+    top: 60px;
+    border-radius: 8px;
+}
+
+.navbar {
+    border: 0px;
+    background-color: #222222;
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 110px;
+    z-index: 999;
+}
+
+.navbar .navbar-collapse {
+    padding: 0px;
+    max-height: none;
+}
+
+.navbar .navbar-nav {
+    float: none;
+}
+
+.navbar-nav {
+    margin: 0px;
+}
+
+.navbar .nav > li {
+    display: block;
+    float: none;
+    height: 80px;
+}
+
+.navbar .nav > li a {
+    display: block;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.navbar .nav > li a:hover, 
+.navbar .nav > li a:focus { 
+    color: #552700; 
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus { 
+    background: #552700; 
+    color: #FFFFFF; 
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar { 
+    background: #222222; 
 }
 
 .brand-logo {
@@ -26,80 +166,129 @@ main {
     margin: 0 auto;
 }
 
+div {
+    display: block;
+}
+
+.background-white {
+    background: #ffffff;
+}
+
+.background-gray {
+    background: #434242;
+}
+
+hr {
+    margin: 40px 0px;
+}
+
+h2 {
+    font-size: 54px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h2, h3 {
+    font-weight: 300;
+    color: #ee5400;
+}
+
+h1, h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
+    font-family: 'Open Sans', sans-serif !important;
+    margin-bottom: 20px;
+}
+
+h1, h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#profile .row > div {
+    margin-bottom: 20px;
+}
+
+p.lead {
+    text-align: center;
+    color: #804615;
+}
+
 #mypic {
-    width: 400px;
-    height: 400px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     border: #d49b6a solid 10px;
     margin: 10px auto;
     display: block;
 }
 
-#resume-header {
-    margin: 20px 0;
+#experiences .experiences {
+    margin-bottom: 20px;
 }
 
-#resume-header h2,
-#resume-header p {
-    margin: 0;
+#experiences .experiences p > strong {
+    display: block;
+    padding-top: 8px;
+    margin-bottom: 10px;
 }
 
-#resume-header h2 {
-    font-weight: bold;
+#experiences .experience .experience-details {
+    color: #ee5400;
 }
 
-#resume-header ul {
-    height: auto;
-    display: inline-flex;
-    align-items: center;
+#experiences .experiences .experience-details * {
+    color: #ee5400;
 }
 
-#resume-header li {
-    display: inline;
-    margin-left: 5px;
-    margin-right: 5px;
+.svg-experience {
+    height: 20px;
+    width: 20px;
 }
 
-#resume-header a {
-    text-decoration: none;
+#abilities ul > li {
+    min-height: 30px;
+    padding: 3px 0px;
 }
 
-.resume-plug {
-    font-size: 1.25em;
+#abilities ul > li:hover {
+    background: #ffd1aa;
 }
 
-.resume-job {
-    margin-top: 2em;
+.ability-title {
+    display: inline-block;
+    width: 60%;
 }
 
-.resume-job p {
-    margin: 0;
-    padding: 5px 10px;
-    background-color: #804615;
-    color: #ffd1aa;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-top: solid #ff7600 5px;
+.ability-score {
+    float: right;
+    display: flex;
 }
 
-.resume-job ul {
-    background-color: #d49b6a;
-    padding: 5px 30px;
+.ability-score > * {
+    align-self: center;
+    margin: 0 2px;
 }
 
-ul,
-ul li {
-    list-style: square;
+#abilites ul > li .ability-score .glyphicon {
+    color: #d49b6a;
+    font-size: 14px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
-.technologies-used {
-    font-weight: bold;
-}
-
-footer {
-    height: 150px;
-    margin-top: 50px;
-    background: linear-gradient(#ff7600, #ee5400);
+.no-bullets {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .clearfix {

@@ -1,3 +1,10 @@
+@media (max-width: 1200px) {
+    #mypic {
+        width: 183px;
+        height: 183px;
+    }
+}
+
 @media (min-width: 992px) {
     #sideNav {
         display: none;
