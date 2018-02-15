@@ -6,16 +6,29 @@ var age = Math.abs(ageStamp.getUTCFullYear() - 1970);
 
 document.getElementById('age').innerHTML = age;
 
-var waypoint = new Waypoint({
-    element: document.getElementById('experiences'),
-    handler: function() { 
-        var expLi = document.getElementById('experiences-li');
-        var expLiClass = expLi.classList;
-    },
+var docHashes = ['profile', 'experiences', 'abilities', 'projects', 'contact']
 
+// generates the way points
+for (var i = 0; i < docHashes.length; i++) {
+
+    var waypoint = new Waypoint({
+        element: document.getElementById(docHashes[i]),
+        handler: function(direction) { 
+            // var expLi = document.getElementById('experiences-li');
+            // var expLiClass = expLi.classList;
+            console.log(docHashes[i] + " has reached the top.");
+            var hashLoc = document.getElementById(docHashes[i]);
+            hashLoc.style.background = '#434242';
+            hashLoc.style.color = '#fff';
+
+        },
     
-    offset: 20
-});
+        
+        offset: 20
+    });
+
+}
+
 
 
 
