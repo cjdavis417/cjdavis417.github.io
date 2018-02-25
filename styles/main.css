@@ -110,6 +110,7 @@ nav {
     right: 5%;
     width: 110px;
     z-index: 999;
+    padding: 0px;
 }
 
 .navbar .navbar-collapse {
@@ -125,10 +126,21 @@ nav {
     margin: 0px;
 }
 
-.navbar .nav > li {
+#nav-list {
     display: block;
-    float: none;
+    width: 100%;
+}
+
+.navbar .nav > ul {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar .nav > li {
     height: 80px;
+    margin: 0 auto;
+    width: 100%;
+    
 }
 
 .navbar .nav > li a {

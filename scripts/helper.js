@@ -4,6 +4,14 @@ var ageTimeStamp = Date.now() - birthday.getTime();
 var ageStamp = new Date(ageTimeStamp);
 var age = Math.abs(ageStamp.getUTCFullYear() - 1970);
 
+// variables for the navigation
+var profLi = document.getElementById('profile-li');
+var expLi = document.getElementById('experiences-li');
+var abilLi = document.getElementById('abilities-li');
+var projLi = document.getElementById('projects-li');
+var contLi = document.getElementById('contact-li');
+
+// inserts current age to webpage
 document.getElementById('age').innerHTML = age;
 
 // array of main sections id's
@@ -14,26 +22,49 @@ for (var i = 0; i < docHashes.length; i++) {
     wayPoints(docHashes[i]);
 }
 
+// fuction for handling the waypoint classes - navigation
 function wayPoints(hash) {
     var waypoint = new Waypoint({
         element: document.getElementById(hash),
         handler: function(direction) { 
-            // var expLi = document.getElementById('experiences-li');
-            // var expLiClass = expLi.classList;
-            console.log(hash + " has reached the top.");
-            var hashLoc = document.getElementById(hash);
-            hashLoc.style.background = '#434242';
-            hashLoc.style.color = '#fff';
+
+            // used this to test if the waypoints were working.
+            if (hash == "profile") {
+                profLi.className = 'active';
+                expLi.className = ' ';
+                abilLi.className = ' ';
+                projLi.className = ' ';
+                contLi.className = ' ';
+            } else if (hash == "experiences") {
+                profLi.className = ' ';
+                expLi.className = 'active';
+                abilLi.className = ' ';
+                projLi.className = ' ';
+                contLi.className = ' ';
+            } else if (hash == "abilities") {
+                profLi.className = ' ';
+                expLi.className = ' ';
+                abilLi.className = 'active';
+                projLi.className = ' ';
+                contLi.className = ' ';
+            } else if (hash == "projects") {
+                profLi.className = ' ';
+                expLi.className = ' ';
+                abilLi.className = ' ';
+                projLi.className = 'active';
+                contLi.className = ' ';
+            } else if (hash == "contact") {
+                profLi.className = ' ';
+                expLi.className = ' ';
+                abilLi.className = ' ';
+                projLi.className = ' ';
+                contLi.className = 'active';
+            }
         },
         offset: 20
     });
-    return this.waypoint.open;
+    return this.waypoint;
 }
-
-// marker.addListener('mouseover', function() {
-//     return this.infoWindow.open(map, this);  
-//     // calls the explicit infowindow object
-// });
 
 
 
