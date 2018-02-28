@@ -18,9 +18,9 @@ document.getElementById('age').innerHTML = age;
 var docHashes = ['profile', 'experiences', 'abilities', 'projects', 'contact']
 
 // generates the way points
-// for (var i = 0; i < docHashes.length; i++) {
-//     wayPoints(docHashes[i]);
-// }
+for (var i = 0; i < docHashes.length; i++) {
+    wayPoints(docHashes[i]);
+}
 
 // fuction for handling the waypoint classes - navigation
 function wayPoints(hash) {
