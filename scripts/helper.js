@@ -66,6 +66,11 @@ function wayPoints(hash) {
     return this.waypoint;
 }
 
+// json technical abilities
+
+fetch(abilities.json)
+.then(response => response.json())
+.then(json => console.log(json));
 
 
 
